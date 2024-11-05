@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="form">
+        <h2>Form Pendaftaran</h2>
+        <form action="/submit_registration" method="post">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" id="name" name="name" required><br>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+    
+          <label for="phone">Nomor Telepon:</label>
+          <input type="tel" id="phone" name="phone" required><br>
+    
+          <label for="sport">Jenis Olahraga:</label>
+          <select id="sport" name="sport" required>
+            <option value="sepak_bola">Sepak Bola</option>
+            <option value="basket">Basket</option>
+            <option value="bulu_tangkis">Bulu Tangkis</option>
+            <option value="voli">Voli</option>
+          </select><br>
+    
+          <label for="team_name">Nama Tim (jika ada):</label>
+          <input type="text" id="team_name" name="team_name"><br>
+    
+          <label for="message">Pesan Tambahan:</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    
+          <button type="submit">Daftar</button>
+        </form>
+      </section>
+
+</body>
+</html>
